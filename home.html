@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>TRACKER</h2>
+    <li id="card"></li>
+    <script src="app.js"></script>
+    <script type="text/javascript">
+        function getPics() {
+            var user = [];
+            fetch = ("https://randomuser.me/api/?results=10").then(function (randomusers) {
+                randomusers.json().then(function (userInfo) {
+                    userInfo.results.foreach(user => {
+                        console.log(user);
+                        const htmlst = `
+                      <li class="card">
+                       <img class="card-image" src="${data.picture.large}"/>
+                       <h2 class="card-title">${user.name.first}. ${user.email}</h2>
+                        <p class="card-subtitle">Type: ${user.location.country}</p>
+                      </li>
+                      `
+                        document.get.getElementById("card").innerHTML = htmlst;
+                    })  
+                });
+                console.log(user)
+            })
+            console.log(user)
+        }
+        getPics();
+
+    </script>
+</body>
+</html>
