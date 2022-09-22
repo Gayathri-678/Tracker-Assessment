@@ -12,22 +12,37 @@
     <h3>TRACKER</h3>
 </div>
 <body>
-    <div class="login-page">
-        <div class="form">
-            <form class="register-form">
-                <input type="text" placeholder="name" />
-                <input type="password" placeholder="password" />
-                <input type="text" placeholder="email address" />
-                <button>create</button>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
-            </form>
-            <form class="login-form">
-                <input type="text" placeholder="username" />
-                <input type="password" placeholder="password" />
-                <button>login</button>
-            </form>
+    <div id="login-form-wrap">
+        <h2>Login</h2>
+        <form id="login-form">
+            <p>
+                <input type="text" id="username" name="username" placeholder="Username" required><i
+                    class="validation"><span></span><span></span></i>
+            </p>
+            <p>
+                <input type="email" id="email" name="email" placeholder="Email Address" required><i
+                    class="validation"><span></span><span></span></i>
+            </p>
+            <p>
+                <input type="submit" id="login" value="Login">
+            </p>
+        </form>
         </div>
-    </div>
+   </body>
+    <style>
+        body {
+            background-image: url('https://images7.alphacoders.com/341/341225.jpg');
+        }
+    </style>
+    <footer>
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#contact">Home</a></li>
+                </ul>
+            </nav>
     <div class="copyright">
         <p>2022 Tracker .All rights reserved</p>
     </div>
